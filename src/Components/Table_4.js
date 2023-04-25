@@ -31,7 +31,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function CustomizedTables4() {
     const [users, setUsers] = useState([]);
-    const baseURL = "http://localhost:3002/gettable4"
+    const baseURL = "https://oru-backend.onrender.com/gettable4"
     useEffect(() => {
       axios.get(baseURL).then((response) => {
         setUsers(response.data.data);
